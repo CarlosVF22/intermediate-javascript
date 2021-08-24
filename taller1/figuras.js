@@ -112,11 +112,30 @@ function calcularDiametro(){
 }
 
 // Calcular altura triangulo isosceles
-function alturaIsosceles (lado,base){
-    var altura = Math.sqrt((lado*lado)-(base*base)/4);
-    return altura;
+function alturaIsosceles (lado1Grande,lado2Grande,baseGrande){
+    if(lado1Grande!=lado2Grande){
+        console.error("Los lados 1 y 2 no son iguales");
+    }else{
+        let ladoAltura;
+        const lado1Pequeño = lado1Grande;
+        const lado2Pequeño = baseGrande/2;
+        const lado1PequeñoCuadrado = lado1Pequeño*lado1Pequeño;
+        const lado2PequeñoCuadrado = lado2Pequeño*lado2Pequeño;
+        ladoAltura = Math.sqrt(lado1PequeñoCuadrado-lado2PequeñoCuadrado);
+
+        const trianguloGrandeAltura = ladoAltura
+        return trianguloGrandeAltura;
+    }
 }
+
 function calcularAlturaIso(){
-    const input = document.getElementById("inputCirculo");
-    const value = input.value;
+    const input1 = document.getElementById("inputTriangulo1Iso");
+    const lado1Grande = input1.value;
+    const input2 = document.getElementById("inputTriangulo2Iso");
+    const lado2Grande = input2.value;
+    const inputB = document.getElementById("inputBaseIso");
+    const baseGrande = inputB.value;
+
+    const alturaIso = alturaIsosceles(lado1Grande,lado2Grande,baseGrande);
+    alert(alturaIso);
 }

@@ -5,3 +5,9 @@ Curso de javaScript practico en platzi
 -implementar las formulas en javaScrip
 -Crear funciones 
 -integrar javaScript con HTML
+
+## Taller # 2
+-definir formulas
+-implementar las formulas en javaScript
+-Crear funciones-
+-integrar javaScript con HTML
