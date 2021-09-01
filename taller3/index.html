@@ -7,9 +7,40 @@
     <title>Promedio</title>
 </head>
 <body>
-    <h1>Taller #3</h1>
-    <h2>Promedio Aritmetico, mediana, moda</h2>
+    <header>
+        <h1>Taller #3</h1>
+        <h2>Promedio Aritmetico, mediana, moda y media geometrica</h2>
+    </header>
+    <main>
+        <span>Cree, agrege y elimine elementos dentro de la lista a trabajar</span>
+        <br>
+        <br>
+        <form action="">
+            <label for="agregarElementoInput">Agregar elemento </label>
+            <br>
+            <input type="number" id="agregarElementoInput">
+            <br>
+            <br>
+            <button type="button" onclick="agregarElementoButton()">
+                Agregar elemento
+            </button>
+            <br>
+            <br>
+            <button type="button" onclick="eliminarElementoButton()">
+                Eliminar ultimo elemento
+            </button>
+        </form>
+        <p id="elementoAgregado"></p>
+        <p id="elementoEliminado"></p>
+        <p id="listaHTML"></p>
+        <p id="MediaAritmeticaHTML"></p>
+        <p id="MedianaHTML"></p>
+        <p id="modaHTML"></p>
+        <p id="mediaGeometrica"></p>
+    </main>
 
+
+    <script src="./lista.js"></script>
     <script src="./promedio.js"></script>
     <script src="./mediana.js"></script>
     <script src="./moda.js"></script>

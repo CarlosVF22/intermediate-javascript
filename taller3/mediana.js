@@ -1,10 +1,3 @@
-lista =[
-    200,
-    300,
-    100,
-    2200,
-];
-
 function esPar(numerito) {
     if (numerito % 2 === 0) {
       return true;
@@ -22,13 +15,9 @@ function calcularMediaAritmetica(lista){
     const promedioLista = sumaLista/lista.length;
     return promedioLista;
 }
-
-const mitadLista = parseInt(lista.length/2);
-
-let mediana;
-
 function EncontrarMediana(lista){
     if (esPar (lista.length)){
+        const mitadLista = parseInt(lista.length/2);
         const elemento1 = lista[mitadLista -1];
         const elemento2 = lista[mitadLista];
         const promedioElemento1y2 = calcularMediaAritmetica([
@@ -36,10 +25,13 @@ function EncontrarMediana(lista){
             elemento2,
         ]);
         mediana = promedioElemento1y2;
+        return mediana;
     }else{
+        const mitadLista = parseInt(lista.length/2);
         mediana = lista[mitadLista];
-        console.log("Soy el else")
-    
+        console.log("Soy el else");
+        return mediana;
     }
-    return mediana;
+    
 }
+
