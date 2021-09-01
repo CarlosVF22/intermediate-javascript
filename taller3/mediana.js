@@ -29,7 +29,6 @@ function EncontrarMediana(lista){
     }else{
         const mitadLista = parseInt(lista.length/2);
         mediana = lista[mitadLista];
-        console.log("Soy el else");
         return mediana;
     }
     
